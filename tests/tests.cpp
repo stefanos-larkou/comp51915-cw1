@@ -7,6 +7,14 @@ TEST(GrayScottTestSuite, ParameterTypeCheck) {
     ASSERT_EQ(typeid(F).name(), typeid(k).name());
 }
 
+TEST(GrayScottTestSuite, VectorSizeCheck) {
+    ASSERT_EQ(u.size(), v.size());
+
+    for (size_t i = 0; i < u.size(); i++) {
+        ASSERT_EQ(u[i].size(), v[i].size());
+    }
+}
+
 int main(int argc, char* argv[]) {
     if (argc != 6) {
         std::cout << "Usage: " << argv[0] << " <Du> <Dv> <F> <k> <threshold>" << std::endl;
