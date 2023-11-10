@@ -10,13 +10,13 @@ Table of Contents:
    1. [Running the Tests](#running-the-tests)
    1. [Parameter Guide](#parameter-guide)
 
-## 1. Description
+## Description
 This project contains a file that runs a simulation of the gray-scott 
 reaction-diffusion system given some initial parameters. If no parameters
 are given, default values are used. The output of each step of the 
 simulation comes in the form of generated *.vtk files.
 
-## 2. Build Guide
+## Build Guide
 ### Requirements:
 1. G++ compiler
 1. CMake version 3.22 or higher (download [here](https://cmake.org/download/))
@@ -40,7 +40,7 @@ You can do this either in the file explorer or from the terminal by running
 1. Run `cmake ..`. The application will now be built inside this folder.
 1. Run `make`.
 
-## 3. Run Guide
+## Run Guide
 ### Running the Simulation
 After building the application, you may run the simulation by opening 
 a terminal inside the `build` directory and running:
