@@ -15,6 +15,14 @@ TEST(GrayScottTestSuite, VectorSizeCheck) {
     }
 }
 
+TEST(GrayScottTestSuite, SimulationProducesCorrectResults){
+    Du = 0.0;
+    Dv = 0.0;
+    init();
+
+    ASSERT_GT(countElementsAboveThreshold(threshold), 0.0);
+}
+
 int main(int argc, char* argv[]) {
     if (argc != 6) {
         std::cout << "Usage: " << argv[0] << " <Du> <Dv> <F> <k> <threshold>" << std::endl;
