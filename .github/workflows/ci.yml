@@ -1,0 +1,33 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up C++ Build Environment
+      uses: actions/setup-cpp@v2
+      with:
+        compiler: 'gcc'  # or 'clang', depending on your project
+
+    - name: Build Project
+      run: |
+        mkdir build
+        cd build
+        cmake ..
+        make
+
+    - name: Run Tests
+      run: |
+        cd build
+        cd tests
+        ctest
