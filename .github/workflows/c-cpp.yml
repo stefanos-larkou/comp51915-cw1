@@ -14,13 +14,9 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Set up C++ Build Environment
-      uses: actions/setup-cpp@v2
-      with:
-        compiler: 'gcc'
-
     - name: Build Project
       run: |
+        git clone https://github.com/google/googletest.git
         mkdir build
         cd build
         cmake ..
