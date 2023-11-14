@@ -17,7 +17,7 @@ jobs:
     - name: Set up C++ Build Environment
       uses: actions/setup-cpp@v2
       with:
-        compiler: 'gcc'  # or 'clang', depending on your project
+        compiler: 'gcc'
 
     - name: Build Project
       run: |
