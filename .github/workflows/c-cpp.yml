@@ -11,14 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-
-    - name: Set up C++ Build Environment
-      uses: actions/setup-cpp@v2
-      with:
-        compiler: 'gcc'
-
+    
     - name: Build Project
       run: |
         mkdir build
