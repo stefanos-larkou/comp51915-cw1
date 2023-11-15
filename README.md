@@ -18,7 +18,6 @@ simulation comes in the form of generated *.vtk files.
 
 ## Build Guide
 ### Requirements:
-1. G++ compiler
 1. CMake version 3.22 or higher (download [here](https://cmake.org/download/))
 1. Git (download [here](https://git-scm.com/downloads))
 
