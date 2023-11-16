@@ -1,4 +1,4 @@
-#include "../gs.hpp"
+#include "../sim/gs.hpp"
 #include <gtest/gtest.h>
 
 // Test (0.1) Check that the type of the model parameters (F, k) 
