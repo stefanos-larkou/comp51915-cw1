@@ -3,6 +3,7 @@
 int main(int argc, char* argv[]) {
     if (argc != 6){
         std::cout << "Usage: " << argv[0] << " <Du> <Dv> <F> <k> <threshold>" << std::endl;
+        std::cout << "Parameter values not provided, using default values instead." << std::endl;
     }
     else{
       Du = std::stod(argv[1]);
